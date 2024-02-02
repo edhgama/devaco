@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: helvetica, arial;
+}
+
+/* util */
+.border {
+  border: solid 1px #2f1616;
+}
+
+/* NAV MENU */
+nav {
+  display: flex;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 30px;
+  grid-template-rows: 60px;
+  position: sticky;
+  /* top:0; */
+  background-color: #fafafa;
+  /* padding: 0 20px 0 20px; */
+  padding: 0.4rem 2rem 0.2rem 2rem;
+  border-bottom: 1px solid #555;
+}
+
+.nav-logo img {
+  height: 50px;
+  width: 100%;
+}
+
+nav .brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff1111;
+}
+
+nav .links {
+  flex-grow: 2;
+  text-align: right;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 35px;
+  transition: background-color 0.2s, color 0.3s;
+  color: #245990;
+  font-size: 16px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #da0506;
+  color: white;
+}
+
+/* SESSIONS  */
+
+session h2{
+  text-align: center;
+}
+
+/* header-carrossel */
+
+
+.carrossel {
+  height: 24rem; 
+}
+
+.carrossel img{   
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  filter:brightness(1.2) ;
+}
+
+/* port */
+
+
+.session-portifolio {
+  height: 22rem;
+  display: flex; 
+  margin: 2rem 0 2rem 0;
+  background-color: #00000022;
+}
+
+.lista-portifolio{
+ 
+  height: 100%;
+  width: 25%; 
+}
+
+.lista-portifolio:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.categoria-portifolio{  
+  background-color: rgba(255, 0, 0, 0.856);
+  height: 5rem;
+  padding: 1rem;
+  margin-bottom: .5rem;
+  border-radius: 0 25px 25px 0;
+}
+
+.categoria-portifolio ul{
+  list-style-type: none;
+}
+
+.categoria-portifolio:hover{
+  background-color:rgba(12, 12, 153, 0.886);
+  transition: 0.2s;
+}
+
+
+.lista-portifolio li{ 
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+#slider-produtos{
+  flex-grow: 2;
+  width: 100%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.port-card{
+  height: 70%;
+  width: 30% ;
+  margin-left: 2rem;
+  border-radius: 8px;
+  
+}
+
+.port-card img{ 
+    height: 250ps;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.port-card h3{
+  padding-top: .5rem;
+  text-align: center;
+
+}
+
+/* lojas */
+
+.lojas {
+  min-height: 16rem;
+  /* height: 18rem; */
+}
+
+
+.sessao-lojas h2{
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+}
+
+.lojas{  
+  padding: 20px  ;
+  display:flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.loja-card{  
+  width: 20%;
+  height: 200px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  padding:10px;
+  margin: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.loja-card h3{
+  text-align: center;
+  color:#B31F18;
+}
+
+.loja-card p{
+  padding-top:5px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+/*contato*/
+
+
+.contato {
+  height: 18rem;
+}
+
+
+.container-contato{
+  
+  border-top: #555 solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 16rem;
+}
+
+.form-box{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  border-radius: 8px;
+  width: 60%;
+}
+
+.form-box .title{
+  padding: 1rem;
+  font-size: 1.5rem;
+  /* border-bottom: thin solid #ccc; */
+}
+
+.form-box form{
+  display: flex;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+  padding: 1.4rem;
+
+}
+
+.form-box input, .form-box textarea{
+  width:calc(50% - 0.5rem);
+  height: 3rem;
+  border-radius: 8px;
+  border: thin solid #999;
+  padding-left: 1rem;
+  margin-bottom: 1rem; 
+}
+
+.form-box textarea{
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.form-box input:first-child{
+  margin-right: 1rem;
+}
+
+.form-box input[name=subject]{
+  width: 100%;
+}
+
+.form-box textarea{
+  width: 100%;
+  height: 14rem;
+  padding: .5px;
+}
+
+.form-box button{
+  display: block;
+  border: none;
+  outline:  none;
+  width: 11rem;
+  height: 2rem;
+  border-radius: 8px;
+  background-color:#da0506 ;
+  color: #fff;
+  font-weight:bold ;
+}
+
+.form-box button:hover{
+  background-color: #B31F18;
+}
+
+/* footer */
+
+.container-footer{
+  border-top: #555 solid 1px;
+  background-color:#0d43f6c9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 13rem;
+  justify-content:space-evenly;
+  text-decoration: none;
+  padding-top: 2.2rem;
+}
+
+.col img{  
+  height: 100px;
+  width: 100%;
+}
+
+.col h1{
+  margin-bottom:  .5rem;
+}
+
+.col ul{
+  line-height: 1.3rem;  
+  list-style-type: none;
+}
+
+.copyright{
+  background-color: navy;
+  color:white;
+  text-align: center;
+  padding: .3rem 0;
+}
+
+/*  */
+/* queryyy */
+/*  */
+
+@media (max-width:600px){
+
+  nav {
+    display: flex;
+    column-gap: 1px;  
+    background-color: #fafafa; 
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    border-bottom: 1px solid #555;
+  }
+  
+  .nav-logo img {
+    display: none;
+    height: 20px;
+    width: 100%;
+  }
+  
+   
+  nav .links { 
+    text-align: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 35px;
+    transition: background-color 0.2s, color 0.3s;
+    color: #000;
+    font-size: 12px;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    background-color: #da0506;
+    color: white;
+  }
+
+  /* carrossel */
+
+.carrossel {
+  height: 12rem; 
+}
+
+.carrossel img{   
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  filter:brightness(1.2) ;
+}
+
+  /*portifolio*/
+
+  
+
+.session-portifolio {
+  height: 14rem;
+  display: flex; 
+  margin: 2rem 0 2rem 0;
+  background-color: #00000022;
+}
+
+.lista-portifolio{
+  height: 100%;
+  width: 25%; 
+}
+
+.lista-portifolio:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.categoria-portifolio{  
+  
+  background-color: rgba(255, 0, 0, 0.856);
+  height: 2.5rem; 
+  padding: 1rem;
+  margin-bottom: .5rem;
+  border-radius: 0 25px 25px 0;
+}
+
+.categoria-portifolio ul{
+  list-style-type: none;
+}
+
+.categoria-portifolio:hover{
+  background-color:rgba(12, 12, 153, 0.886);
+  transition: 0.2s;
+}
+
+
+.lista-portifolio li{ 
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+#slider-produtos{
+  flex-grow: 2;
+  width: 100%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.port-card{
+  height: 70%;
+  width: 30% ;
+  margin-left: 2rem;
+  border-radius: 8px;
+  
+}
+
+.port-card img{ 
+    height: 250ps;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.port-card h3{
+  padding-top: .5rem;
+  text-align: center;
+
+}
+
+
+}
